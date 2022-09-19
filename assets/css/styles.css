@@ -1,2 +1,15 @@
 
 /* css */
+*{
+    border: 1px solid red;
+}
+
+/* Rectangle 27 */
+
+.rectangle{
+position: absolute;
+width: 298px;
+height: 109px;
+
+background: #920000;
+border-radius: 100px;}
