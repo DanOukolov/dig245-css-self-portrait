@@ -1,24 +1,45 @@
 
 /* css */
-
 body{
-    background-image: url("assets\img\shrek-background.jpg");
-    padding-right: 10em;
-    padding-left: 10em;
+    
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    padding-right: 2em;
+    padding-left: 2em;
     font-family: Courier New, “Lucida Console”;
     color: #920000;
 }
 
-portrait{
-    position: absolute;
-    z-index: inherit;
-    motion: auto;
-    margin-top: 100px;
-    margin-right: 100px;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+figure{
+    width: 800px;
+    margin: 50px;
+    outline: solid 1px black;
+    display: flex;
+    justify-content: center;
 
 }
+portrait{
+    padding-bottom: 100em;
+    padding-left: 50em;
+    position: absolute;
+}
 hat{
+    
     background: #920000;
+    z-index: 3;
 }
 
 hat.top {
@@ -26,6 +47,9 @@ hat.top {
     width: 298px;
     height: 109px;
     border-radius: 100px;
+    top: 100px;
+    right: 185px;
+    
 }
 
 hat.bottom{
@@ -33,16 +57,19 @@ hat.bottom{
     width: 268px;
     height: 92px;
     border-radius: 0px 0px 10px 10px;
+    top: 180px;
+    right: 200px;
 }
 
 hat.middle{
     position: absolute;
     width: 268px;
     height: 13px;
-
     background: #D8BA52;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 300px 300px 0px 0px;
+    top: 200px;
+    right: 200px;
 }
 
 hair {
@@ -54,6 +81,9 @@ hair.top{
     width: 298px;
     height: 91px;
     border-radius: 200px 200px 0px 0px;
+    top:230px;
+    right: 185px;
+    z-index: 2;
 }
 
 hair.right{
@@ -61,6 +91,9 @@ hair.right{
     width: 59px;
     height: 141px;
     border-radius: 50px 100px 50px 50px;
+    top: 280px;
+    right: 185px;
+    z-index: 2;
 
 }
 
@@ -69,5 +102,160 @@ hair.left{
     width: 59px;
     height: 141px;
     border-radius: 100px 50px 50px 50px;
+    top: 280px;
+    right: 424px;
+    z-index: 2;
 
+}
+
+face.top{
+    position: absolute;
+    width: 204px;
+    height: 218px;
+    background: rgba(177, 136, 98, 0.81);
+    border-radius: 50px 50px 0px 0px;
+    top: 280px;px;
+    right: 232px;
+    z-index: 1;
+}
+
+face.left{
+    position: absolute;
+    width: 109px;
+    height: 86px;
+    background: rgba(177, 136, 98, 0.81);
+    border-radius: 0px 0px 0px 200px;
+    top: 498px;
+    right: 327px;
+    z-index: 2;
+}
+
+face.right{
+    position: absolute;
+    width: 95px;
+    height: 86px;
+    background: rgba(177, 136, 98, 0.81);
+    border-radius: 0px 0px 200px 0px;
+    top: 498px;
+    right: 232px;
+    z-index: 2;
+}
+lips {
+    position: absolute;
+    width: 99px;
+    height: 26px;
+    background: #D1B2AB;
+    border-radius: 0px 0px 200px 200px;
+    top: 498px;
+    right: 285px;
+    z-index: 3;
+}
+
+throat{
+    position: absolute;
+    width: 76px;
+    height: 13px;
+    background: #000000;
+    border-radius: 0px 0px 200px 200px;
+    top: 505px;
+    right: 296px;
+    z-index: 4;
+
+}
+
+teeth{
+    position: absolute;
+    width: 65px;
+    height: 13px;
+    background: #F0EDE5;
+    border-radius: 0px 0px 50px 50px;
+    top: 505px;
+    right: 302px;
+    z-index: 5;
+}
+
+eye.left{
+    position: absolute;
+    width: 33px;
+    height: 17px;
+    background: #D9D9D9;
+    border-radius: 50px 50px 0px 0px;
+    top: 375px;
+    right: 360px;
+    z-index: 5;
+}
+
+eye.right{
+    position: absolute;
+    width: 33px;
+    height: 17px;
+    background: #D9D9D9;
+    border-radius: 50px 50px 0px 0px;
+    top: 375px;
+    right: 275px;
+    z-index: 5;
+}
+
+eyeball.left{
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    background: #634210;
+    border-radius: 100px;
+    top: 375px;
+    right: 367px;
+    z-index: 5;
+    }
+
+eyeball.right{
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    background: #634210;
+    border-radius: 100px;
+    top: 375px;
+    right: 282px;
+    z-index: 5;
+}
+
+eyebrow.right{
+    position: absolute;
+    width: 48px;
+    height: 9px;
+    background: #634210;
+    top: 360px;
+    right: 260px;
+    z-index: 5;
+}
+
+eyebrow.left{
+    position: absolute;
+    width: 48px;
+    height: 9px;
+    background: #634210;
+    top: 360px;
+    right: 360px;
+    z-index: 5;
+}
+
+nose.top{
+
+    position: absolute;
+    width: 24px;
+    height: 63px;
+    background: #D1B2AB;
+    border-radius: 10px 10px 50px 50px;
+    top: 392px;
+    right: 322px;
+    z-index: 5;
+}
+nose.bottom{
+    position: absolute;
+    width: 46px;
+    height: 17px;
+    background: #D1B2AB;
+    border-radius: 50px;
+    top: 440px;
+    right: 311px;
+    z-index: 5;
 }
