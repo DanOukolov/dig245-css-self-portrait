@@ -1,6 +1,6 @@
 
 /* javascript */
-
+console.log(sumElements);
 var bauhaus = `
 
 Staaatliches Bauhaus (1919-1933)
@@ -27,11 +27,3 @@ function mousemove(event){
 
 window.addEventListener('mousemove', mousemove);
 
-
-var sumTops = document.querySelectorAll(".top");
-var sumBottoms = document.querySelectorAll('bottom');
-var sumRights = document.querySelectorAll('.right');
-var sumLefts = document.querySelectorAll('.left');
-var sumMiddles = document.querySelectorAll('.middle');
-var sumStandalones = document.querySelectorAll('.standalone');
-var sumElements = (sumTops + sumBottoms + sumRights + sumLefts + sumMiddles + sumMiddles + sumStandalones);
